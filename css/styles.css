@@ -15,6 +15,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
+}
+.estres{
+  -webkit-animation: redonno  1.63s linear 0s infinite normal;
+  -moz-animation:    redonno  1.63s linear 0s infinite normal;
+  -ms-animation:     redonno  1.63s linear 0s infinite normal;
+  animation:         redonno  1.63s linear 0s infinite normal;
+} 
+
+a {
+  
+  text-decoration: underline;
+}
+#dani{
+  color:rgba(234,242,247,0.41) !important;
+  -webkit-animation:  risueno 1.63s linear 0s infinite normal;
+  -moz-animation:     risueno 1.63s linear 0s infinite normal;
+  -ms-animation:      risueno 1.63s linear 0s infinite normal;
+  animation:          risueno 1.63s linear 0s infinite normal;
 }
 
 body * {
@@ -285,10 +304,7 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
+
 
 a:hover {
   color: #0a58ca;
@@ -296,8 +312,7 @@ a:hover {
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 pre,
@@ -12289,7 +12304,7 @@ fieldset:disabled .btn {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("assets/img/dani/1.jpg") no-repeat center center;
+  background: url("../assets/img/dani/1.jpg") no-repeat center center;
   background-size: cover;
   object-fit: contain;
   padding-top: 8rem;
@@ -12356,7 +12371,7 @@ header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -12460,6 +12475,29 @@ footer.footer {
     box-shadow: 21px 13px 5px 0px #4c5f69;
   }
 }
+
+@keyframes risueno {
+  0% {
+    opacity: 0.41;
+  }
+  50% {
+    opacity: 0.59;
+  }
+  99.99% {
+    opacity: 0.41;
+  }
+}
+@keyframes redonno {
+  0% {
+    opacity: 0.59;
+  }
+  50% {
+    opacity: 0.41;
+  }
+  99.99% {
+    opacity: 0.59;
+  }
+}
 .risueno {
   margin-bottom: 2.73rem;
 }
@@ -12470,4 +12508,7 @@ footer.footer {
   -moz-animation: change-colo 0.3749s linear 0s infinite normal;
   -ms-animation: change-colo 0.3749s linear 0s infinite normal;
   animation: change-colo 0.3749s linear 0s infinite normal;
+}
+.primero  *{
+  color:rgb(21,13,8);
 }
